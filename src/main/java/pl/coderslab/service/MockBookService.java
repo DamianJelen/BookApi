@@ -32,7 +32,7 @@ public class MockBookService {
 
     public void addBook(Book book) {
         int lastPosBook = books.size() - 1;
-        book.setId(books.get(lastPosBook).getId());
+        book.setId(books.get(lastPosBook).getId() + 1);
         books.add(book);
     }
 

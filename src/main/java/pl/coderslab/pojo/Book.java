@@ -2,8 +2,10 @@ package pl.coderslab.pojo;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
+@NoArgsConstructor
 @AllArgsConstructor
 public class Book {
     private Long id;
@@ -12,8 +14,4 @@ public class Book {
     private String author;
     private String publisher;
     private String type;
-
-    public void setId(Long id) {
-        this.id = id++;
-    }
 }
